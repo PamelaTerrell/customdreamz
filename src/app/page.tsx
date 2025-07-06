@@ -2,16 +2,43 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
-      <Image
-        src="/cdm.png"
-        alt="Custom Dreamz Motorsports logo"
-        width={300}   // Change this to your preferred size
-        height={300}
-        priority
-      />
-      <h1 className="text-4xl font-bold mt-6">Custom Dreamz Motorsports</h1>
-      <p className="mt-2 text-lg text-gray-300">Performance Upgrades • Custom Paint • Custom Audio</p>
+    <main className="min-h-screen bg-black text-white">
+      <section className="flex flex-col items-center justify-center py-12">
+        <Image
+          src="/cdm.png"
+          alt="Custom Dreamz Motorsports logo"
+          width={300}
+          height={300}
+          priority
+        />
+        <h1 className="text-4xl font-bold mt-6">Custom Dreamz Motorsports</h1>
+        <p className="mt-2 text-lg text-gray-300">
+          Performance Upgrades • Custom Paint • Custom Audio
+        </p>
+      </section>
+
+      {/* Contact Info Section */}
+      <section className="bg-gray-900 text-white px-6 py-10 text-center">
+        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <p className="mb-2">
+          📍 <strong>Address:</strong> 3751 Peach Orchard Rd, Augusta, GA 30906
+        </p>
+        <p className="mb-2">
+          📞 <strong>Phone:</strong>{" "}
+          <a href="tel:7067732422" className="text-red-400 hover:underline">
+            (706) 773-2422
+          </a>
+        </p>
+        <p className="mb-2">
+          📧 <strong>Email:</strong>{" "}
+          <a
+            href="mailto:customdreamzmotorsports1@gmail.com"
+            className="text-red-400 hover:underline"
+          >
+            customdreamzmotorsports1@gmail.com
+          </a>
+        </p>
+      </section>
     </main>
   );
 }
