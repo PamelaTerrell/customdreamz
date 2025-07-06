@@ -8,8 +8,8 @@ export default function Home() {
         <Image
           src="/cdm.png"
           alt="Custom Dreamz Motorsports logo"
-          width={300}
-          height={300}
+          width={320}
+          height={320}
           priority
         />
         <h1 className="text-4xl font-bold mt-6">Custom Dreamz Motorsports</h1>
