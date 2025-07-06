@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
         </p>
 
         {/* Business Hours */}
-        <div className="max-w-md mx-auto bg-gray-800 rounded-lg p-4">
+        <div className="max-w-md mx-auto bg-gray-800 rounded-lg p-4 mb-6">
           <h3 className="text-xl font-semibold mb-2">Business Hours</h3>
           <ul className="text-left space-y-1">
             <li>
@@ -58,6 +59,14 @@ export default function Home() {
             </li>
           </ul>
         </div>
+
+        {/* Link to Contact Page */}
+        <Link
+          href="/contact"
+          className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-700 transition"
+        >
+          Visit Contact Page
+        </Link>
       </section>
     </main>
   );
