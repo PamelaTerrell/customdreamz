@@ -1,5 +1,7 @@
 import "./globals.css";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
+
 import { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -30,6 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <footer className="p-4 text-center border-t border-gray-700 mt-8">
           <p>&copy; {new Date().getFullYear()} Custom Dreamz Motorsports</p>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
